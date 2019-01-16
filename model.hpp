@@ -26,6 +26,7 @@ class model{
     void init();
     void print_nbr(int i){std::cout<<std::get<0>(nbr[i])<<"    "<<std::get<1>(nbr[i])<<"    "<<std::get<2>(nbr[i])<<"    "<<std::get<3>(nbr[i])<<std::endl;}
     int get_L(){return L;}
+    int get_N(){return N;}
     private:
         int L;
         int N;

@@ -25,3 +25,4 @@ d_vector linspace(double min, double max, int nbr, bool endpoint){
     }
     return d;
 }
+
