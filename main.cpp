@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
     double p;
     int k, s;
     std::ofstream txt;
-    txt.open("magnetization.dat");
+    txt.open("magnetization_L"+std::to_string(mod.get_L())+"_Ntrials"+std::to_string(mod.get_Ntrials())+".dat");
 
     for(size_t i = 0; i<tNum.size();i++)
     {

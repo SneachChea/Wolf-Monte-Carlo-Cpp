@@ -1,5 +1,5 @@
-L	32
-Ntrials	1000
-nT	30
-Tmin	0.1
-Tmax	10
+L	16
+Ntrials	2000
+nT	50
+Tmin	1
+Tmax	5
