@@ -2,7 +2,7 @@
 
 ## Presentation
 
-WolfCpp is a C++11 implementation of the ferromagnetic Ising model. I tried to mimic as much as possible the python implementation made in [this github repo](https://github.com/SneachChea/Wolf-Monte-Carlo-Ising). It uses intensivaly the stl C++ library and only output the magnetization as a function of temperature.
+WolfCpp is a C++11 implementation of the ferromagnetic Ising model. I tried to mimic as much as possible the python implementation made in [this github repo](https://github.com/SneachChea/Wolf-Monte-Carlo-Ising). It uses intensively the stl C++ library and only output the magnetization as a function of temperature.
 
 ## Compilation
 
@@ -18,7 +18,7 @@ on the source folder.
 
 The program relies mainly on the paramaters in the param.dat file:
 - L: the number of lattice site on each rows. The lattice being a square lattice, the total number of spin in the lattice is N=L*L
-- Ntrials: the number of trials for a Monte-Carlo simulation, *i.e* the number of Monte-Carlo iterations. The higher, the better but you once the system is converged, their is no need to iterate again.
+- Ntrials: the number of trials for a Monte-Carlo simulation, *i.e* the number of Monte-Carlo iterations. The higher, the better. Once the system is converged, their is no need to iterate again.
 - nT: Number of temperature point in the interval [Tmin,Tmax].
 - Tmin: smallest value of the temperature.
 - Tmax: largest vlaue of the temperature.
@@ -30,12 +30,12 @@ For instance, here is a plot of the magnetization for L=16, Ntrials=2000.
 
 ![magnetization](./img/magnetExemple.png)
 
-Clear, we see a second-order phase transition occuring at ![Tc](./img/Tc.gif). The finite size of the lattice explains why we do not see a first-order transition.
+We clearly see a second-order phase transition occuring at ![Tc](./img/Tc.gif). The finite size of the lattice explains why we do not see a first-order phase transition.
 
 
 ## Possible improvements
 
-Here is a list of possible improvement:
+Here is a list of possible improvements:
 * Use Cmake to simplify the compilation.
 * Use a standard JSON file to read parameters. 
 * Output the thermalized lattice state at the end of a Monte-Carlo simulation
